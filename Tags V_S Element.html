@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0039)http://127.0.0.1:5500/Tags-Element.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tags V/S Element</title>
     <style>
@@ -13,17 +13,17 @@
     </style>
 </head>
 <body>
-    <h1>Tags & Element</h1>
+    <h1>Tags &amp; Element</h1>
     <hr>
     <h2>HTML Element Syntax</h2>
     <p>An HTML element is an individual component of an HTML document. It represents semantics, or meaning. For example, the title element represents the title of the document.</p>
 <p>Most HTML elements are written with a start tag (or opening tag) and an end tag (or closing tag), with content in between. Elements can also contain attributes that define its additional properties. For example, a paragraph, which is represented by the p element, would be written as:</p>
-<Div><img src="image/tags.jpeg" alt="Element syntax image">
-</Div>
+<div><img src="./Tags V_S Element_files/tags.jpeg" alt="Element syntax image">
+</div>
 <b>hello</b>
-<p>We will learn about the HTML attributes in <a href="My Hobby.html" target="_blank"> next chapter</a>.</p>
-<P><strong>Note:</strong>All elements don't require the end tag or closing tag to be present. These are referred as empty elements, self-closing elements or void elements.</P>
-<p><h2>HTML Tags Vs Elements</h2></p>
+<p>We will learn about the HTML attributes in <a href="http://127.0.0.1:5500/My%20Hobby.html" target="_blank"> next chapter</a>.</p>
+<p><strong>Note:</strong>All elements don't require the end tag or closing tag to be present. These are referred as empty elements, self-closing elements or void elements.</p>
+<p></p><h2>HTML Tags Vs Elements</h2><p></p>
 <p>Technically, an HTML element is the collection of start tag, its attributes, an end tag and everything in between. On the other hand an HTML tag (either opening or closing) is used to mark the start or end of an element, as you can see in the above illustration.</p>
 <p>However, in common usage the terms HTML element and HTML tag are interchangeable i.e. a tag is an element is a tag. For simplicity's sake of this website, the terms "tag" and "element" are used to mean the same thing — as it will define something on your web page.</p>
 <h2>Case Insensitivity in HTML Tags and Attributes</h2>
@@ -35,7 +35,7 @@
            &lt;p&gt;This is a paragraph.&lt;/p&gt;
            &lt;P&gt;This is also a valid paragraph.&lt;/P&gt;</code></pre></div>
     <h2>Empty HTML Elements</h2>
-    <p>Empty elements (also called self-closing or void elements) are not container tags — that means, you can not write &lthr&gt;some content&lt;/hr&gt; or &lt;br&gt;some content&lt;/br&gt;.
+    <p>Empty elements (also called self-closing or void elements) are not container tags — that means, you can not write &lt;hr&gt;some content&lt;/hr&gt; or &lt;br&gt;some content&lt;/br&gt;.
 
         A typical example of an empty element, is the &lt;br&gt; element, which represents a line break. Some other common empty elements are &lt;img&gt;, &lt;input&gt;, &lt;link&gt;, &lt;meta&gt;, &lt;hr&gt;, etc.
         </p>
@@ -83,20 +83,56 @@
         </p>
         <h1>Block code</h1>
         <hr>
-    <pre><code><Div>&lt;div&gt;&lt;img src="image/code1.png" alt="Element syntax image"&gt;&lt;div&gt;
-    &lt;b&gt;hello&lt;/b&gt;
-    </Div></code></pre>
+        <pre><code><div>&lt;img src="image/code1.png" alt="Element syntax image"&gt;
+        </div></code></pre>
     
 
 
-<Div><img src="image/code1.png" alt="Element syntax image">
-</Div>
+<div><img src="./Tags V_S Element_files/code1.png" alt="Element syntax image">
+</div>
 <h1>Inline code</h1>
 <hr>
-<pre><code><Div>&lt;img src="image/code2.png" alt="Element syntax image"&gt;
-&lt;b&gt;this is inline text&lt;/b&gt;
-</Div></code></pre>
-<Div><img src="image\code2.png" alt="Element syntax image">
-</Div>
-</body>
-</html>
+<pre><code><div>&lt;img src="image/code2.png" alt="Element syntax image"&gt;
+</div></code></pre>
+<div><img src="./Tags V_S Element_files/code2.png" alt="Element syntax image">
+</div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
