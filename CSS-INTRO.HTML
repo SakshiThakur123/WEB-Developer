@@ -1,28 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css-intro</title>
+    <title><abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                    title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                            title="cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr>-intro</title>
     <style>
-       h1 b{
-           background-color: blanchedalmond; color: blue;
-        }
-    
+
     </style>
 </head>
+
 <body>
- <h1> css-intro</h1>
-<p style="color: brown;">This is <b style="color: brown;">bold text</b>.</p>
-<p>This is <strong>strongly important text</strong>.</p>
-<p>This is <i>italic text</i>.</p>
-<p>This is <em>emphasized text</em>.</p>
-<p>This is <mark>highlighted text</mark>.</p>
-<p>This is <code>computer code</code>.</p>
-<p>This is <small>smaller text</small>.</p>
-<p>This is <sub>subscript</sub> and <sup>superscript</sup> text.</p>
-<p>This is <del>deleted text</del>.</p>
-<p>This is <ins>inserted text</ins>.</p>
-    
-</body>
-</html>
+    <h1>HTML Styles</h1>
+    <p>In this tutorial you will learn how to apply style rules to HTML elements.</p>
+    <h1>Styling HTML Elements</h1>
+    <p>HTML is quite limited when it comes to the presentation of a web page. It was originally designed as a simple way
+        of presenting information. <a href="style .css"><abbr title="cascading style sheet"></a><abbr title="cascading style sheet"><abbr
+                    title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                            title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                                    title="cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr></abbr></abbr>
+        was introduced in December 1996 by the <abbr title="World Wide Web Consortium"><abbr
+                title="World Wide Web Consortium"><abbr title="World Wide Web Consortium"><abbr
+                       
+        to provide a better way to style HTML elements.
+
+        With <abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                    title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                            title="cascading style sheet"><abbr
+                                title="cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr></abbr>, it becomes
+        very easy to specify the things like, size and typeface for the fonts, colors for the text and backgrounds,
+        alignment of the text and images, amount of space between the elements, border and outlines for the elements,
+        and lots of other styling properties.</p>
+
+    <h1>Adding Styles to HTML Elements</h1>
+    <p>Style information can either be attached as a separate document or embedded in the HTML document itself. These
+        are the three methods of implementing styling information to an HTML document.</p>
+    <p>
+    <ul>
+        <li><strong>Inline styles —</strong> Using the style attribute in the HTML start tag.&lt;link &gt;
+
+        <li><strong>Embedded style —</strong> Using the &lt;style &gt; element in the head section of the
+            document.&lt;li &gt;
+
+        <li><strong>External style sheet —</strong> Using the &lt;link &gt;element, pointing to an external <abbr
+                title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                        title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                                title="cascading style sheet"><abbr
+                                    title="cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr></abbr>
+            files.&lt;li &gt;
+    </ul>
+    <p>In this tutorial we will cover all these different types of style sheet one by one.</p>
+    <p><strong>Note:</strong> The inline styles have the highest priority, and the external style sheets have the
+        lowest. It means if you specify styles for your paragraphs in both embedded and external style sheets, the
+        conflicting style rules in the embedded style sheet would override the external style sheet.</p>
+    </p>
+    <h1>Inline Styles</h1>
+    <p>Inline styles are used to apply the unique style rules to an element, by putting the <abbr
+            title="cascading style sheet"><abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                        title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                                title="cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr></abbr> rules
+        directly into the start tag. It can be attached to an element using the style attribute.
+
+        The style attribute includes a series of <abbr title="cascading style sheet"><abbr
+                title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                        title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                                title="cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr></abbr> property and
+        value pairs. Each property: value pair is separated by a semicolon (;), just as you would write into an embedded
+        or external style sheet. But it needs to be all in one line i.e. no line break after the semicolon.
+
+        The following example demonstrates how to set the color and font-size of the text:</p>
+    <div>
+        <pre><code>
+            &lt;h1 style="color:red; font-size:30px;"&gt;This is a heading&lt;/h1&gt;
+            &lt;p style="color:green; font-size:18px;"&gt;This is a paragraph.&lt;/p&gt;
+            &lt;div style="color:green; font-size:18px;"&gt;This is some text.&lt;/div&gt;
+           </code></pre>
+    </div>
+    <p>Using the inline styles are generally considered as a bad practice. Because style rules are embedded directly
+        inside the html tag, it causes the presentation to become mixed with the content of the document, which makes
+        updating or maintaining a website very difficult.
+
+        To learn about the various <abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                    title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                            title="cascading style sheet"><abbr
+                                title="cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr></abbr> properties
+        in detail, please check out <abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                    title="cascading style sheet"><abbr title="cascading style sheet"><abbr
+                            title="cascading style sheet"><abbr
+                                title="cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr></abbr> tutorial
+        section.</p>
+    <div>
+        <p><strong>Note:</strong> It's become impossible to style pseudo-elements and pseudo-classes with inline styles.
+            You should, therefore, avoid the use of style attributes in your markup. Using external style sheet is the
+            preferred way to add style information to an HTML document.</p>
+    </div>
+    <h1>Embedded Style Sheets</h1>
+    <p>Embedded or internal style sheets only affect the document they are embedded in.
+
+        Embedded style sheets are defined in the &lt;head&gt; section of an HTML document using the&lt;style&gt; tag.
+        You can define any number of &lt;style&gt; elements inside the&lt;head&gt; section.
+        The following example demonstrates how style rules are embedded inside a web page.&lt;/p&gt;
+    <div>
+        <pre><code>
+                &lt;head&gt;
+             &lt;style&gt;
+             body { background-color: ; }
+		     h1 { color: black*; }
+            p { color:*; }
+            &lt;/style&gt;
+            &lt;/head&gt;</code></pre>
+    </div>
+    <h1>External Style Sheets</h1>
+    <p>An external style sheet is ideal when the style is applied to many pages.
+
+        An external style sheet holds all the style rules in a separate document that you can link from any HTML
+        document on your site. External style sheets are the most flexible because with an external style sheet, you can
+        change the look of an entire website by updating just one file.
+
+        You can attach external style sheets in two ways — linking and importing:</p>
+    <h1>An external style sheet can be linked to an HTML document using the
+        <link> tag.
+
+        The
+        <link> tag goes inside the
+
+        <head> section, as shown here:
+    </h1>
+    <div>
+        <pre><code>&lt;head&gt;
+    &lt;link rel="stylesheet" href="<abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr title="cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr></abbr>/style.<abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr title="cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr></abbr>"&gt;
+&lt;/head&gt;</code></pre>
+    </div>&lt;/head&gt;
+    <h1>Importing External Style Sheets</h1>
+    <p>The @import rule is another way of loading an external style sheet. The @import statement instructs the browser
+        to load an external style sheet and use its styles.
+
+        You can use it in two ways. The simplest way is to use it within the <style>
+            element in your <head>section. Note that,
+            other <abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr title="cascading style sheet"><abbr title="cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr></abbr>rules may still be included in the <style>element.</p><div><pre><code>&lt;
+            style&gt;
+            @import url("<abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr></abbr>/style.<abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr></abbr>");
+
+            p {
+                color: blue;
+                font-size: 16px;
+            }
+
+            &lt;/style&gt;
+            </code></pre></div><p>Similarly,
+            you can use the @import rule to import a style sheet within another style sheet.</p><div><pre><code>@import url("<abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr></abbr>/layout.<abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr></abbr>");
+            @import url("<abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr></abbr>/color.<abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet"><abbr title=" cascading style sheet">CSS</abbr></abbr></abbr></abbr></abbr>");
+
+            body {
+                color: ;
+                font-size: 14px;
+            }
+
+            </code></pre></div><p><strong>Note:</strong>All @import rules must occur at the start of the style sheet. Any style rule defined in the style sheet itself override conflicting rule in the imported style sheets. The @import rule may cause performance issues, you should generally avoid importing style sheets.</p></body></html>
