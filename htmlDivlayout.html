@@ -3,55 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>div-layout</title>
+    <title>Html div layout</title>
     <style>
-       nav{
-       
-        display: block;
-        float: left;
-        padding-left: 5px;
-        padding-top: 10px;
-        padding-right: 10px;
+        div{
+            border: 5px solid rgb(66, 36, 95);
+            
+            
+        }
+        .header{
+            background-color: rgb(127, 35, 214);
+            text-align: center;
+        }
         
-       }
-        ul li{
-            list-style: none;
+    
+        ul,li{
+            list-style-type: none;
         }
         a{
             text-decoration: none;
         }
-        section{
-        padding: 11px 30px;
+        nav{
+            display: block;
+            float: left;
+           margin: 7px 0px;
+           padding-right: 8px;
+           padding-top: 9px;
+           border: 5px solid rgb(45, 26, 63);
+           
+
         }
-        
-        
+        nav{
+            background-color: rgb(120, 91, 148);
+        }
+        .section{
+           padding: 11px 15px;
+        }
+        h1{
+            margin: 15px;
+        }
+        h1,footer{
+            margin-left: 35px;
+            text-align: center;
+        }
+        .section{
+
+            text-align:  center;
+            background-color: rgb(166, 132, 198);
+
+        }
+        .footer{
+            background-color: blueviolet;
+        }
     </style>
+    
 </head>
 <body>
-    <tbody>
     <div>
-    <div>
-        <header>
-<h1>TABLE-TUTORIAL</h1>
-        </header>
+     <div class="header">
+            <h1>Table-tutorial</h1>
+        
+     </div>
+  
+    <div class="nav">
+        <nav>
+<ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Contact Us</a></li>
+    <li><a href="">Course</a></li>
+</ul>
+
+        </nav>
+        </div>
+        <div class="section">
+            
+        <section>
+<h3>Welcome Here</h3>
+<p>let Start....</p>
+</section>
+
     </div>
-    <div>
-    <nav>
-        <UL>
-            <LI><a href="#">HOME</a></LI>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT US </a></li>
-            <li><a href="#"> COURSES</a></li>
-        </UL>
+    <div class="footer">
+        <footer>
+<h3>@ copywrite 2001</h3>
+</footer>
+    </div>
 
-    </nav>
-    <section class="div">
-        <h1> WELCOME HERE</h1>
-        <p>Lets start....</p>
-
-    </section >
-    <footer> @copywrite 2801</footer>
+    
 </div>
-</tbody>
+
+
 </body>
 </html>
