@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-Float property</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            background-color: mediumslateblue;
+            margin: 0%;
+            font-family: "Poppins", sans-serif;
+            color: white;
+        }
+
+        .BOX {
+            border: 3px solid black;
+            padding: 20px;
+            height: 80px;
+            max-height: 350px;
+            background-color: rgb(142, 67, 126);
+            margin-bottom: 10px;
+        }
+
+        .box {
+            border: 3px solid rgb(53, 41, 41);
+            border-radius: 10px;
+
+            height: 40px;
+            width: 80PX;
+            
+
+
+            display: flow-root;
+
+            margin: 5px;
+            float: inline-end;
+            background-color: teal;
+            box-sizing: border-box;
+
+
+        }
+
+        .BOX img {
+            height: 80px;
+            width: 300px;
+            float: left;
+            border: 3px solid black;
+            margin-right: 10px;
+           border-radius: 5px;
+
+        }
+
+        .frame {
+            height: 50px;
+            width: 700px;
+            display: flow-root;
+            float: inline-start;
+            padding:150px;
+            align-items: center;
+            margin-top: 0px;
+            
+           
+        }
+
+        .sidebar {
+            border: 5px solid rgb(61, 35, 35);
+            justify-content: left;
+            width: 170px;
+            height: 350px;
+            float: left;
+            padding: 10px;
+            margin-top: 20px;
+            margin-left: 3px;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            
+
+
+
+
+        }
+
+        div {
+            border: 10px rgb(16, 18, 21);
+            display: flex;
+            justify-content: ;
+            align-items: center;
+            text-align: center;
+            
+        }
+
+        div ul li,
+        a {
+            list-style: none;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        /* body {
+            font-family: "Poppins", sans-serif;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="BOX">
+        <img src="image/code2.png" alt="img">
+        <div class="box">CONTACT</div>
+        <div class="box">COURSES</div>
+        <div class="box">ABOUT</div>
+        <div class="box">HOME</div>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li> <a href="CSS-INTRO.HTML" target="myframe">css intro
+           </a></li>
+           <li> <a href=" css-boxmodel.html" target="myframe"> css-boxmodel
+                </a></li>
+            <li><a href="hobby.html" target="myframe"> hobby-html
+                </a></li>
+            <li><a href="HTMLTABLE.HTML" target="myframe"> table
+                </a></li>
+            <li><a href="HTML FORM.html" target="myframe"> form
+                </a></li>
+            <li><a href="htmlDivlayout.html" target="myframe"> divlayout
+                </a></li>
+            <li><a href="htmlintro.html" target="myframe"> intro1-html
+                </a></li>
+            <li><a href="html-102.html" target="myframe"> intro-layout
+                </a></li>
+            <li><a href="html-102.html" target="myframe" >intro1-html
+                    </a></li>
+            <li><a href="html-102.html" target="myframe"> intro-layout
+                </a></li>
+            <li><a href="html-102.html" target="myframe"> intro-layout
+                </a></li>
+            <li>
+                </ul><br>
+    </div>
+    <div class="frame">
+        <!-- <a href="HTML FORM.html" target="myframe"></a>  -->
+        <iframe src="HTML FORM.html" frameborder="5" name="myframe" height="500" width="700"></iframe>
+    </div>
+</body>
+
+</html>
