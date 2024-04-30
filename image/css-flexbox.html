@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            /* justify-content: center; */
+            border: 5px solid plum;
+           
+            /* flex-wrap: wrap; */
+            /* align-content: center; */
+            flex-flow: row wrap;
+            height: 300px;
+
+            /* row-gap: 0px;
+           column-gap: 5px; */
+
+        }
+
+        .item {
+            height: 30px;
+            width: 40px;
+            border: 3px solid blueviolet;
+            margin: 3px;
+
+
+        }
+
+        .item1 {
+            background-color: brown;
+            /* flex-grow: 2; */
+            /* flex-shrink:0; */
+        }
+
+        .item2 {
+            background-color: brown;
+            align-self:flex-end;
+            /* position: relative; */
+
+            /* flex-grow: 2; */
+            /* flex-shrink:1; */
+
+        }
+
+        .item3 {
+            /* background-color: brown; */
+            flex-grow: 0.5;
+            flex-shrink:2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+        <div class="item">16</div>
+        <!-- <div class="item">17</div>
+        <div class="item">18</div>
+        <div class="item">19</div>
+        <div class="item">20</div>
+        <div class="item">21</div>
+        <div class="item">22</div>
+        <div class="item">23</div>
+        <div class="item">24</div>
+        <div class="item">25</div>
+        <div class="item">26</div>
+        <div class="item">27</div>
+        <div class="item">28</div>
+        <div class="item">29</div>
+        <div class="item">30</div> -->
+
+
+
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci laboriosam ut eligendi unde quas impedit totam hic corporis maiores magnam quo voluptas quasi, iste dicta at, nemo voluptatum, minus mollitia.</p>
+
+</body>
+
+</html>

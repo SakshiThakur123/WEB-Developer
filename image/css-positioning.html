@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-positioning</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+        .box{
+            height: 1000px;
+
+        }
+
+        div {
+            background-color: rgb(202, 154, 154);
+            margin: 5px;
+            border: 2px solid black;
+
+        }
+
+        .box1 {
+            position: fixed;
+            height: 150px;
+            width:400px;
+            text-align: center;
+            left:50px;
+            top: 160px;
+            margin-bottom: 20px;
+            position: fixed;
+            background-color: blue;
+        }
+        .box2{
+            position: absolute;
+            height: 150px;
+            width:400px;
+            text-align: center;
+            left:100px;
+            top: 250px;
+            margin-bottom: 20px;
+            background-color: rgb(174, 0, 255);
+        }
+        
+        .box3{
+            position: absolute;
+            height: 150px;
+            width:400px;
+            text-align: center;
+            left:150px;
+            top: 340px;
+            margin-bottom: 20px;
+            background-color: rgb(255, 0, 153);
+         }
+a{
+    cursor:url ;
+    border: 3px  solid saddlebrown;
+    background-color: aqua;
+    border-radius: 3px;
+    
+}
+.flow{
+    border: 3px solid grey;
+    height: 40vh;
+    width:20vh;
+    overflow:auto;
+
+}
+.btnradius{
+    height: 20px;
+    width: 50px;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: rgb(92, 204, 204);
+}
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="btnradius">hello</div>
+        <div class="box1">Hello</div><br>
+        <div class="box2"> world</div><br>
+        <div class="box3">css</div><br>
+        <a href="css-positioning.html">GO TO NEXT</a>
+    </div>
+   <div class="flow">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae cupiditate temporibus laborum laboriosam. Consequatur Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi sunt quam voluptas quos eligendi, odit quae odio hic, numquam vitae itaque dolorem quis animi dolorum et asperiores doloribus, fugiat deserunt?</p>
+   </div>
+   
+</body>
+
+</html>
